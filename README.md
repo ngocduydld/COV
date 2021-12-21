@@ -14,3 +14,5 @@ The corpus is created from the KPRO method with five components:
 − The AS dataset is aspect standardized are called ASS (Aspect Standardized Sentences): 6655 sentences.
 
 − The opinion dataset is generated from the combination of an aspect term, and a sentimental term is called GD (Generated Data): 22829 sentences.
+
+The paper https://doi.org/10.1038/s41598-021-03011-6 introduce and experiment on this dataset.
