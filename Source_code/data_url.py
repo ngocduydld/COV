@@ -1,0 +1,80 @@
+url_stopword_data = "stopword.xls"
+url_opinion_data = "opinion_test.xls"
+url_sentence_of_opinion_data = "sentence_of_opinion_list.xls"
+# word2vec
+url_word2vec_gia_ban = "gib_word_size_300.model"
+url_word2vec_noi_that = "not_word_size_300.model"
+url_word2vec_dong_co = "doc_word_size_300.model"
+url_word2vec_ngoai_that = "ngt_word_size_300.model"
+url_word2vec_an_toan = "ant_word_size_300.model"
+url_word2vec_tong_the = "tot_word_size_300.model"
+url_word2vec_van_hanh = "vah_word_size_300.model"
+# data
+url_an_toan_data = "safety_atemp_2.xls"
+url_dong_co_data = "engine_atempt_2.xls"
+url_gia_ban_data = "price_atempt_2.xls"
+url_ngoai_that_data = "exterior_atempt_2.xls"
+url_noi_that_data = "interior_atempt_2.xls"
+url_tong_the_data = "overal_atempt_1.xls"
+url_van_hanh_data = "performance_atempt_1.xls"
+# aspect files
+url_ant_aspect_data = "ant_aspect.xls"
+url_doc_aspect_data = "doc_aspect.xls"
+url_gib_aspect_data = "gib_aspect.xls"
+url_ngt_aspect_data = "ngt_aspect.xls"
+url_not_aspect_data = "not_aspect.xls"
+url_tot_aspect_data = "tot_aspect.xls"
+url_vah_aspect_data = "vah_aspect.xls"
+url_sentiment_doc_data = "sentiment_data_train_3C_doc.xls"
+# labels of aspects
+not_labels = ['not', 'none']
+tot_labels = ['tot', 'none']
+gib_labels = ['gib', 'none']
+ngt_labels = ['ngt', 'none']
+vah_labels = ['vah', 'none']
+ant_labels = ['ant', 'none']
+doc_labels = ['doc', 'none']
+sentiment_labels = ['post', 'neu', 'neg']
+# model json files path
+not_json_file_bilstm = 'interior_aspect_2c.json'
+tot_json_file_bilstm = 'overal_aspect_2c.json'
+gib_json_file_bilstm = 'price_aspect_2c.json'
+ngt_json_file_bilstm = 'exterior_aspect_2c.json'
+vah_json_file_bilstm = 'performance_aspect_2c.json'
+ant_json_file_bilstm = 'safety_aspect_2c.json'
+doc_json_file_bilstm = 'engine_aspect_2c.json'
+sentiment_json_file = 'CNN_sentiment_word_3c_relu.json'
+# weight ò model files path
+not_weight_file_bilstm='interior_aspect.h5'
+tot_weight_file_bilstm='overal_aspect.h5'
+gib_weight_file_bilstm='price_aspect.h5'
+ngt_weight_file_bilstm='exterior_aspect.h5'
+vah_weight_file_bilstm='performance_aspect.h5'
+ant_weight_file_bilstm='safety_aspect.h5'
+doc_weight_file_bilstm='engine_aspect.h5'
+sentiment_weight_file='CNN_sentiment_word_3c-039-0.3146-0.9361.h5'
+ant_similar = []
+ant_aspect_term = []
+doc_similar = []
+doc_aspect_term = []
+gib_similar = []
+gib_aspect_term = []
+ngt_similar = []
+ngt_aspect_term = []
+not_similar = []
+not_aspect_term = []
+tot_similar = []
+tot_aspect_term = []
+vah_similar = []
+vah_aspect_term = []
+
+similar = []
+polarity = []
+aspect_term = []
+senti_term = []
+stopword = []
+sentence_list = []
+opinion_list = []
+ontology_aspect = []
+ontology_similar = []
+ontology_sentiment = []
