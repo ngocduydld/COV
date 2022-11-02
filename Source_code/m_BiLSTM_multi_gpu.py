@@ -55,7 +55,7 @@ with mirrored_strategy.scope():
     dense4 = Dense(128, activation='relu')(drop4)
     drop5 = Dropout(0.5)(dense4)
     dense7 = Dense(128, activation='relu')(drop5)
-    out = Dense(2, activation='sigmoid')(dense7)
+    out = Dense(2, activation='softmax')(dense7)
     model = Model(inputs, out)
 
     from tensorflow.python.keras.optimizer_v1 import Adam
