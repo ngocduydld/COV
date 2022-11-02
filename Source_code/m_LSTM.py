@@ -30,7 +30,7 @@ model.add(LSTM(units=300))
 model.add(Dropout(0.3))
 model.add(Dense(128,activation='relu'))
 model.add(Dropout(0.4))
-model.add(Dense(2, activation='sigmoid'))
+model.add(Dense(2, activation='softmax'))
 model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['acc', metrics.Precision(), metrics.Recall()])
 
 checkpoint_filepath = 'LSTM_aspect-{epoch:03d}-{val_loss:.4f}-{val_acc:.4f}.h5'
