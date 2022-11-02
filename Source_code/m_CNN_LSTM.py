@@ -47,7 +47,7 @@ model.add(LSTM(300))
 model.add(Dropout(0.35))
 model.add(Dense(128,activation='relu'))
 model.add(Dropout(0.4))
-model.add(Dense(dense_num, activation='sigmoid'))
+model.add(Dense(dense_num, activation='softmax'))
 
 model.compile(loss='categorical_crossentropy',optimizer='adam',metrics=['accuracy', metrics.Precision(), metrics.Recall()])
 
