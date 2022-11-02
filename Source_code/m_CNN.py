@@ -52,7 +52,7 @@ merged_tensor = concatenate([maxpool_0, maxpool_1, maxpool_2, maxpool_3, maxpool
 flatten = Flatten()(merged_tensor)
 reshape = Reshape((5*num_filters,))(flatten)
 dropout = Dropout(drop)(flatten)
-output = Dense(units=2, activation='sigmoid',kernel_regularizer=regularizers.l2(L2))(dropout)
+output = Dense(units=2, activation='softmax',kernel_regularizer=regularizers.l2(L2))(dropout)
 
 model = Model(inputs, output)
 loss_fn = tf.keras.losses.CategoricalCrossentropy()
