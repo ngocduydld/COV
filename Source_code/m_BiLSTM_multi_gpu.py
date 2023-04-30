@@ -72,7 +72,7 @@ with mirrored_strategy.scope():
         save_freq='epoch')
 
     model.fit(X_train, y_train, batch_size=batch_size, epochs=epoch, verbose=1,
-              validation_data=(X_test, y_test),
+              validation_data=(X_val, y_val),
               callbacks=[model_checkpoint_callback])
 
 model_json = model.to_json()
